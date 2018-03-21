@@ -7,7 +7,8 @@ Problem: fitness nutrition programs offer readily available macro-nutrient (prot
 
 Idea: create a program, in python, that by pulling from a database of foods, i.e. ground beef/chicken breast/potatoes, which includes their individual PCF contents, create meals via an selection algorithm which meet PCF goals for user, roughly including 1 protein-heavy food, 1 carb-heavy food, 1 fat-heavy food, and 1 vegetable.
 
-Execution:
+
+**Execution**:
 
 1) Datasource to Database
 

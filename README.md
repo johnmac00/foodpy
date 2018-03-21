@@ -3,10 +3,11 @@ A meal-creation program to meet macro-nutrient goals for meals.
 
 I am new at python/CS, much of the terminology below may be wrong, although conceptually what I'm saying I'm trying to do is correct.
 
-Problem: fitness nutrition programs offer readily available macro-nutrient (protein, fats, and carbs- "PCF") goals for the day, or per-meal, based on fitness goals, activity level, etc. However, the process of actually creating meals (without paying for full meal plans) to meet those goals is an arduous guess-and-check process, often involving Excel and manual transmission of PCF values per food type into tables, totalling PCFs vs. goals, change food/change serving size, etc. I am creating this out of necessity after experiencing immense frustration with the above process. Also, I need to learn python better...
+**Problem**: 
+Fitness nutrition programs offer readily available macro-nutrient (protein, fats, and carbs- "PCF") goals for the day, or per-meal, based on fitness goals, activity level, etc. However, the process of actually creating meals (without paying for full meal plans) to meet those goals is an arduous guess-and-check process, often involving Excel and manual transmission of PCF values per food type into tables, totalling PCFs vs. goals, change food/change serving size, etc. I am creating this out of necessity after experiencing immense frustration with the above process. Also, I need to learn python better...
 
-Idea: create a program, in python, that by pulling from a database of foods, i.e. ground beef/chicken breast/potatoes, which includes their individual PCF contents, create meals via an selection algorithm which meet PCF goals for user, roughly including 1 protein-heavy food, 1 carb-heavy food, 1 fat-heavy food, and 1 vegetable.
-
+**Idea**: 
+Create a program, in python, that by pulling from a database of foods, i.e. ground beef/chicken breast/potatoes, which includes their individual PCF contents, create meals via an selection algorithm which meet PCF goals for user, roughly including 1 protein-heavy food, 1 carb-heavy food, 1 fat-heavy food, and 1 vegetable.
 
 **Execution**:
 
@@ -14,19 +15,19 @@ Idea: create a program, in python, that by pulling from a database of foods, i.e
 
 I will pull from the USDA Food Composition Databse (https://ndb.nal.usda.gov/ndb/search/list), using its API. In the process I will learn about API requiests. I will format requests, or manually edit requests, to just include food name, PCF content. 
 
-Endstate: Pull at least 5 food types per P/C/F, i.e. P: lamb, ground beef, ground turkey, chicken, ribeye, C: potatoes, sweet potatoes, etc....
+*Endstate*: Pull at least 5 food types per P/C/F, i.e. P: lamb, ground beef, ground turkey, chicken, ribeye, C: potatoes, sweet potatoes, etc....
 
 2) Database
 
 I think this will require an SQL database. I will create three databases (P, C, and F), and start pulling in foods into the three databases. Possibly I can automate this from the API to sort into these three databases. More to follow... 
 
-Endstate: 3 databases, each holding 5 food options per macro. 
+*Endstate*: 3 databases, each holding 5 food options per macro. 
 
 3) Pulling from Database:
 
 I will figure out how to use python to pull from the database(s), based on selection criteria
 
-Endstate: I can pull data at request from a database(s), using python
+*Endstate*: I can pull data at request from a database(s), using python
 
 4) Meal-plan Algorithm
 
@@ -40,13 +41,13 @@ Given a PCF/goal per-meal (parameters?), I will make, or research and select a p
 
 - etc.
 
-Endstate: a meal consisting of 1 protein-heavy, 1 carb-heavy, and 1 fat-heavy food option is generated, within tolerance of PCF goals for that meal
+*Endstate*: a meal consisting of 1 protein-heavy, 1 carb-heavy, and 1 fat-heavy food option is generated, within tolerance of PCF goals for that meal
 
 5) Output of Algorithm
 
 After the meal-plan algorithm creates an output, figure out best way to output it. Likely this will be in the terminal, however would like to develop this further. 
 
-Endstate: a way to see the algorithm's output
+*Endstate*: a way to see the algorithm's output
 
 6) Future options:
 

@@ -1,0 +1,7 @@
+https://github.com/schirinos/nutrient-db
+"
+Nutrient-db is a program to convert the USDA National 
+Nutrient Database for Standard Reference 
+(http://www.ars.usda.gov/ba/bhnrc/ndl) from the flat 
+files they provide into a relational database and optional a collection of json documents.
+"
